@@ -24,7 +24,7 @@ function touchHandler(event) {
     init();
 
 var xy;
-xy = Math.floor(Math.random() * 1000 + 1);
+xy = Math.floor(Math.random() * 1000 + 100);
 xy = xy / 100;
 if (xy < 1)
   xy += 1;
@@ -94,7 +94,7 @@ function execute_ckt() {
   else if (difference_bt < 0) {
     var audio = new Audio('audio1_detector.mp3');
     audio.play();
-    var temp1 = (-0.1) * difference_bt;
+    var temp1 = (0.1) * difference_bt;
     temp1 = Math.min(0.5, temp1);
 
     audio.volume = temp1;
